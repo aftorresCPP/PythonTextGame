@@ -1,0 +1,25 @@
+{
+  "weapons": [
+    {
+      "name": "Rifle",
+      "range": 100,
+      "healthDMG": 20,
+      "armorDMG": 15,
+      "shieldDMG": 30
+    },
+    {
+      "name": "Pistol",
+      "range": 50,
+      "healthDMG": 20,
+      "armorDMG": 15,
+      "shieldDMG": 30
+    },
+    {
+      "name": "Knife",
+      "range": 1,
+      "healthDMG": 20,
+      "armorDMG": 15,
+      "shieldDMG": 30
+    }
+  ]
+}

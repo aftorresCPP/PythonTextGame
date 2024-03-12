@@ -1,0 +1,25 @@
+{
+  "melee_weapons": [
+    {
+      "name": "Broad Sword",
+      "range": 99,
+      "healthDMG": 120,
+      "armorDMG": 30,
+      "shieldDMG": 150
+    },
+    {
+      "name": "Pulse Blade",
+      "range": 99,
+      "healthDMG": 60,
+      "armorDMG": 15,
+      "shieldDMG": 165
+    },
+    {
+      "name": "Rotatry Axe",
+      "range": 99,
+      "healthDMG": 120,
+      "armorDMG": 90,
+      "shieldDMG": 30
+    }
+  ]
+}
