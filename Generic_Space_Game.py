@@ -4,11 +4,11 @@ import random
 
 
 class Character:
-    def __init__(self, name, base_health):
+    def __init__(self, name: str, base_health: int):
         self.name = name                #Names come from the type of soldier below. 
         self.base_health = base_health
    
-    def attack(self, weapon): #3/6/24 I should have done all the coding here, but I didn't. You'll find these completed functions in the soldier classes
+    def attack(self, weapon: str, distance_from_player: int): #3/6/24 I should have done all the coding here, but I didn't. You'll find these completed functions in the soldier classes
                                 #Character class is kinda useless the way I have the code set up at the current moment, but I'm still using it
         pass
 
@@ -40,7 +40,7 @@ class HeavySoldier(Character): #Soldiers inherit the attributes and methods of t
         self.current_health = self.base_health + self.armor + self.shields
         #need something here to make sure heavies are not allowed to use long ranged weapons. Do this later
 
-    def attack(self, weapon, distance_from_player):
+    def attack(self, weapon: str, distance_from_player: int):
         print(f"{self.name} used {weapon['name']}!")  # Access 'name' key in weapon dictionary
 
         if weapon['range'] >= distance_from_player: #fix this later. This compares the range of the weapon to the distance the target is
@@ -76,7 +76,7 @@ class LightSoldier(Character): #basically a copy/paste of the character above wi
         
         self.current_health = self.base_health + self.armor + self.shields
 
-    def attack(self, weapon, distance_from_player):
+    def attack(self, weapon: str, distance_from_player: int):
         print(f"{self.name} used {weapon['name']}!")  # Access 'name' key in weapon dictionary
 
         if weapon['range'] >= distance_from_player: #fix this later. This compares the range of the weapon to the distance the target is
@@ -128,7 +128,7 @@ class MeleeSoldier(Character):
     
 
 class Weapon:
-    def __init__(self, name, range, healthDMG, armorDMG, shieldDMG): #weapons and their damage types will come from a json later. weapons can do different types of damage
+    def __init__(self, name: int, range: int, healthDMG: int, armorDMG: int, shieldDMG: int): #weapons and their damage types will come from a json later. weapons can do different types of damage
 
         self.name = name
         self.range = range
@@ -167,50 +167,59 @@ class Game:
         print("1. Heavy Soldier")
         print("2. Light Soldier")
         print("3. Melee Soldier")
-        choice = input() #might want to add some exceptions late to prevent this from breaking
-        if choice == "1":
-            self.player = HeavySoldier()
-        elif choice == "2":
-            self.player = LightSoldier()
-        elif choice == "3":
-            self.player = MeleeSoldier()
+        while True:
+            choice = input() #might want to add some exceptions late to prevent this from breaking
+            if choice == "1":
+                self.player = HeavySoldier(); break
+            elif choice == "2":
+                self.player = LightSoldier(); break
+            elif choice == "3":
+                self.player = MeleeSoldier(); break
         
         self.computer = random.choice([HeavySoldier(), LightSoldier(), MeleeSoldier()]) #computer's character is randomized
     
     def load_weapons(self):
          #input(str("Choose filename"))   this was here for debugging to make sure the file can be located and opened
          with open("weapons.json", 'r') as weapon_list:
-            self.weapons = json.load(weapon_list)['weapons']
+            self.weapons: list[dict] = json.load(weapon_list)['weapons']
 
         
          with open("melee_weapons.json", 'r') as weapon_list:
-            self.melee_weapons = json.load(weapon_list)['melee_weapons']
+            self.melee_weapons: list[dict] = json.load(weapon_list)['melee_weapons']
     
     def choose_weapon(self):
-        if type(self.player) in [HeavySoldier, LightSoldier]:
-            print("Choose your weapon:")   
-            #print("condition test")     
-            for i, weapon in enumerate(self.weapons, 1): 
-                print(f"{i}. {weapon['name']} ({weapon['range']})")
-            choice = int(input()) - 1 #remember indexing!! hence "-1"
-            return self.weapons[choice]
+        while True:
+            try:
+                if isinstance(self.player, (HeavySoldier, LightSoldier)):
+                    print("Choose your weapon:")   
+                    #print("condition test")     
+                    for i, weapon in enumerate(self.weapons, 1): 
+                        print(f"{i}. {weapon['name']} ({weapon['range']})")
+                choice = int(input()) - 1 #remember indexing!! hence "-1"
+                return self.weapons[choice]
+            except ValueError:
+                continue
         
-        elif type(self.player) in [MeleeSoldier]:
-            print("Choose Melee Weapon:")
-            for i, weapon in enumerate(self.melee_weapons, 1):
-                print(f"{i}. {weapon['name']} ({weapon['range']})")
-            choice = int(input()) - 1 #remember indexing!! hence "-1"
-            return self.melee_weapons[choice]
+        elif isinstance(self.player, MeleeSoldier):
+            while True:
+                try:
+                    print("Choose Melee Weapon:")
+                    for i, weapon in enumerate(self.melee_weapons, 1):
+                        print(f"{i}. {weapon['name']} ({weapon['range']})")
+                    choice = int(input()) - 1 #remember indexing!! hence "-1"
+                    return self.melee_weapons[choice]
+                except ValueError:
+                    continue
 
     
     def play_round(self):
         player_weapon = self.choose_weapon()
 
-        if type(self.computer) in [HeavySoldier, LightSoldier]:
-            computer_weapon = random.choice(self.weapons)
+        if isinstance(self.computer, (HeavySoldier, LightSoldier)):
+            computer_weapon: dict = random.choice(self.weapons)
 
-        elif type(self.computer) in [MeleeSoldier]:
-            computer_weapon = random.choice(self.melee_weapons)
+        elif isinstance(self.computer, MeleeSoldier):
+            computer_weapon: dict = random.choice(self.melee_weapons)
 
     #in order for the attack methood to work in the Soldier classes above, weapon and distance_from_player must be passed into attack
 
