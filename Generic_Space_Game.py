@@ -8,7 +8,7 @@ class Character:
         self.name = name                #Names come from the type of soldier below. 
         self.base_health = base_health
    
-    def attack(self, weapon): #3/6/24 I should have done all the coding here, but I didn't. You'll find these completed functions in the soldier classes
+    def attack(self, weapon, distance_from_player): #3/6/24 I should have done all the coding here, but I didn't. You'll find these completed functions in the soldier classes
                                 #Character class is kinda useless the way I have the code set up at the current moment, but I'm still using it
         pass
 
