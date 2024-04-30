@@ -2,24 +2,230 @@
   "melee_weapons": [
     {
       "name": "Broad Sword",
-      "range": 99,
-      "healthDMG": 120,
-      "armorDMG": 30,
-      "shieldDMG": 150
+      "Description": "A heavy blade used to slash through health and sheilds",
+      "range": 500,
+      "healthDMG": 119,
+      "armorDMG": 31,
+      "shieldDMG": 147,
+      "ammo": 999
+      
     },
     {
       "name": "Pulse Blade",
-      "range": 99,
-      "healthDMG": 60,
-      "armorDMG": 15,
-      "shieldDMG": 165
+      "Description": "A small, dagger like blade that pulses electricity into your enemy's suit. Good against shields",
+      "range": 500,
+      "healthDMG": 64,
+      "armorDMG": 17,
+      "shieldDMG": 168,
+      "ammo": 999
+
     },
     {
-      "name": "Rotatry Axe",
-      "range": 99,
-      "healthDMG": 120,
+      "name": "Rotary Axe",
+      "Description": "Heavy melee weapon with a spinning axe blade",
+      "range": 500,
+      "healthDMG": 121,
+      "armorDMG": 94,
+      "shieldDMG": 28,
+      "ammo": 999
+    },
+    {
+      "name": "Butter Knife",
+      "Description": "You were in the middle of breakfast. It's all you had",
+      "range": 500,
+      "healthDMG": 150,
+      "armorDMG": 50,
+      "shieldDMG": 100,
+      "ammo": 999
+    },
+    {
+      "name": "Electric Fists",
+      "Description": "Brass knuckles with extra spice",
+      "range": 500,
+      "healthDMG": 140,
+      "armorDMG": 45,
+      "shieldDMG": 110,
+      "ammo": 999
+    },
+    {
+      "name": "Vibroblade",
+      "Description": "A vibrating blade that cuts through health and shields with ease",
+      "range": 500,
+      "healthDMG": 160,
+      "armorDMG": 60,
+      "shieldDMG": 120,
+      "ammo": 999
+    },
+    {
+      "name": "Plasma Maul",
+      "Description": "Smash through health and sheilds with this electrified maul",
+      "range": 500,
+      "healthDMG": 180,
+      "armorDMG": 70,
+      "shieldDMG": 130,
+      "ammo": 999
+    },
+    {
+      "name": "Warp Scythe",
+      "Description": "Slice warp-portals into the very fabric of space to close the distance to your enemy. Melee soldiers can use this to attack at further distances from normal",
+      "range": 500,
+      "healthDMG": 170,
+      "armorDMG": 65,
+      "shieldDMG": 125,
+      "ammo": 999
+    },
+    {
+      "name": "Katana",
+      "Description": "Weebs love this one",
+      "range": 500,
+      "healthDMG": 190,
+      "armorDMG": 80,
+      "shieldDMG": 140,
+      "ammo": 999
+    },
+    {
+      "name": "Finger Guns",
+      "Description": "This might be cheating, but it counts as melee since it's on your hands",
+      "range": 500,
+      "healthDMG": 200,
       "armorDMG": 90,
-      "shieldDMG": 30
+      "shieldDMG": 150,
+      "ammo": 999
+    },
+    {
+      "name": "Neurotrax Blade",
+      "Description": "A dagger with a vial of nerurotoxin that attacks your enemy's nervous system",
+      "range": 500,
+      "healthDMG": 440,
+      "armorDMG": 100,
+      "shieldDMG": 160,
+      "ammo": 2
+    },
+    {
+      "name": "Titanium Claws",
+      "Description": "Become Wolverine for a couple of rounds ",
+      "range": 500,
+      "healthDMG": 240,
+      "armorDMG": 110,
+      "shieldDMG": 170,
+      "ammo": 999
+    },
+    {
+      "name": "Rock",
+      "Description": "Go full caveman and bash your opponent's head in with a rock",
+      "range": 500,
+      "healthDMG": 260,
+      "armorDMG": 120,
+      "shieldDMG": 180,
+      "ammo": 999
+    },
+    {
+      "name": "Stick",
+      "Description": "Now listen up! Back in my day, we didn't have fancy tanks! We had sticks. Two sticks and a rock for the entire platoon! And we had to share the rock! You should consider yourself very lucky marines! -Sgt Johnson",
+      "range": 500,
+      "healthDMG": 280,
+      "armorDMG": 130,
+      "shieldDMG": 190,
+      "ammo": 999
+    },
+    {
+      "name": "Booma-Rang",
+      "Description": "Boomerang that tracks enemies and explodes on impact",
+      "range": 760,
+      "healthDMG": 300,
+      "armorDMG": 140,
+      "shieldDMG": 200,
+      "ammo": 2
+    },
+    {
+      "name": "Halberd",
+      "Description": "Pretend you're a cast member of Medieval Times. Looks bad ass",
+      "range": 500,
+      "healthDMG": 320,
+      "armorDMG": 150,
+      "shieldDMG": 210,
+      "ammo": 999
+    },
+    {
+      "name": "Comically Large Spoon",
+      "Description": "Only a spoonful",
+      "range": 500,
+      "healthDMG": 340,
+      "armorDMG": 160,
+      "shieldDMG": 220,
+      "ammo": 999
+    },
+    {
+      "name": "Hydralic Hammer",
+      "Description": "Hammer that deals two blows from a hydralicly activated weight in the hammer head",
+      "range": 500,
+      "healthDMG": 360,
+      "armorDMG": 170,
+      "shieldDMG": 230,
+      "ammo": 999
+    },
+    {
+      "name": "Tracking Spear",
+      "Description": "Spear that automatically tracks and adjusts its path to the enemy. Gives extra range to melee soldiers",
+      "range": 850,
+      "healthDMG": 380,
+      "armorDMG": 180,
+      "shieldDMG": 240,
+      "ammo": 1
+    },
+    {
+      "name": "Throwing Knife",
+      "Description": "Self Explanatory. Throw a knife. Awards extra range to melee soldiers upon use",
+      "range": 600,
+      "healthDMG": 400,
+      "armorDMG": 190,
+      "shieldDMG": 250,
+      "ammo": 4
+    },
+    {
+      "name": "Plasma Dagger",
+      "Description": "Dagger that slashes through shields",
+      "range": 500,
+      "healthDMG": 110,
+      "armorDMG": 100,
+      "shieldDMG": 500,
+      "ammo": 999
+    },
+    {
+      "name": "WWE Steel Folding Chair",
+      "Description": "Looks real, but isn't. Don't tell the fans",
+      "range": 500,
+      "healthDMG": 120,
+      "armorDMG": 40,
+      "shieldDMG": 20,
+      "ammo": 999
+    },
+    {
+      "name": "1000 Degree Hot Knife",
+      "Description": "Cuts through almost anything",
+      "range": 500,
+      "healthDMG": 460,
+      "armorDMG": 220,
+      "shieldDMG": 280,
+      "ammo": 999
+    },
+    {
+      "name": "Dis-O-Death",
+      "Description": "A deadly frisbee that self-stablizes in flight. Does good damage, but you only have two of there per round. Use them against heavy soldiers",
+      "range": 800,
+      "healthDMG": 480,
+      "armorDMG": 230,
+      "shieldDMG": 290,
+      "ammo": 2
+    },
+    {
+      "name": "Fists",
+       "Description": "You're too broke to afford any weapons. Fist your enemy for low damage",
+      "range": 500,
+      "healthDMG": 80,
+      "armorDMG": 10,
+      "shieldDMG": 100,
+      "ammo": 999
     }
   ]
 }

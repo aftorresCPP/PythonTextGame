@@ -1,25 +1,231 @@
 {
   "weapons": [
     {
-      "name": "Rifle",
-      "range": 100,
-      "healthDMG": 20,
-      "armorDMG": 15,
-      "shieldDMG": 30
+      "name": "Slug-Slinger",
+      "Description": "Standard issue bullet gun",
+      "range": 204,
+      "healthDMG": 106,
+      "armorDMG": 233,
+      "shieldDMG": 154,
+      "ammo": 30
     },
     {
-      "name": "Pistol",
-      "range": 50,
-      "healthDMG": 20,
+      "name": "Auto Pistol",
+      "Description": "Standard issue pistol",
+      "range": 123,
+      "healthDMG": 176,
       "armorDMG": 15,
-      "shieldDMG": 30
+      "shieldDMG": 423,
+      "ammo": 40
     },
     {
       "name": "Knife",
-      "range": 1,
+      "Description": "Standard issue knife",
+      "range": 5,
       "healthDMG": 20,
       "armorDMG": 15,
-      "shieldDMG": 30
+      "shieldDMG": 66,
+      "ammo": 999
+    },
+    {
+      "name": "Plasma Blaster",
+      "Description": "Developed by Python Corp. Fires a deadly bolt of superheater plasma",
+      "range": 150,
+      "healthDMG": 150,
+      "armorDMG": 200,
+      "shieldDMG": 180,
+      "ammo": 20
+    },
+    {
+      "name": "Ion Cannon",
+      "Description": "Experimental weapon in the prototype stage. Fires super-heavy charged particles",
+      "range": 200,
+      "healthDMG": 180,
+      "armorDMG": 250,
+      "shieldDMG": 220,
+      "ammo": 8
+    },
+    {
+      "name": "Thermite Launcher",
+      "Description": "Grenade launcher that fires thermite. Super effective against armor",
+      "range": 25,
+      "healthDMG": 250,
+      "armorDMG": 400,
+      "shieldDMG": 370,
+      "ammo": 4
+    },
+    {
+      "name": "Molecular Disruptor",
+      "Description": "Damages your opponent on the molecular level. Effective against base health",
+      "range": 100,
+      "healthDMG": 433,
+      "armorDMG": 211,
+      "shieldDMG": 71,
+      "ammo": 16
+    },
+    {
+      "name": "Gauss Gun",
+      "Description": "Archaic technology from the 21st century. Moderately effective against all types of enemies",
+      "range": 200,
+      "healthDMG": 170,
+      "armorDMG": 220,
+      "shieldDMG": 190,
+      "ammo": 25
+    },
+    {
+      "name": "Railgun",
+      "Description": "Thundurously loud and incredibly heavy. Ultra-fast projectiles have incredible range and damage. Upgrades the Gauss Gun",
+      "range": 300,
+      "healthDMG": 171,
+      "armorDMG": 455,
+      "shieldDMG": 62,
+      "ammo": 6
+    },
+    {
+      "name": "Plasma Sword",
+      "Description": "This technology was originally designed to be used in tungsten refineries to cut metal. Space Samurais adapted the tech to cut through advanced types of armor",
+      "range": 2,
+      "healthDMG": 40,
+      "armorDMG": 50,
+      "shieldDMG": 100,
+      "ammo": 999
+
+    },
+    {
+      "name": "Sonic Boom Cannon",
+      "Description": "Generates a shock wave that damages soft tissues. Only for use in environments with atmospheres",
+      "range": 120,
+      "healthDMG": 310,
+      "armorDMG": 160,
+      "shieldDMG": 101,
+      "ammo": 5
+    },
+    {
+      "name": "Fuel Rod Cannon",
+      "Description": "Depleted Uranium cores can be weaponized once they've been used for space-flight",
+      "range": 300,
+      "healthDMG": 280,
+      "armorDMG": 26,
+      "shieldDMG": 320,
+      "ammo": 12
+    },
+    {
+      "name": "Plasma Grenade",
+      "Description": "Superheated plasma cloud engulfs your enemy. Use it when enemies close in on you",
+      "range": 10,
+      "healthDMG": 505,
+      "armorDMG": 274,
+      "shieldDMG": 112,
+      "ammo": 2
+      
+    },
+    {
+      "name": "Laser Rifle",
+      "Description": "Cheap, yet effective weapon that has incredible range. Focusing lenses cannot be adjusted",
+      "range": 600,
+      "healthDMG": 210,
+      "armorDMG": 104,
+      "shieldDMG": 462,
+      "ammo": 45
+    },
+    {
+      "name": "Vortex Launcher",
+      "Description": "Launch a pressurized whirlwind. Kicks up dirt and debris to damage your enemies. For use in enviromnets with atmospheres only",
+      "range": 200,
+      "healthDMG": 200,
+      "armorDMG": 250,
+      "shieldDMG": 220,
+      "ammo": 6
+    },
+    {
+      "name": "Plasma Whip",
+      "Description": "PETA hates when space cowboys use this. Effective against sheilds, but has short range",
+      "range": 5,
+      "healthDMG": 60,
+      "armorDMG": 80,
+      "shieldDMG": 150,
+      "ammo": 999
+    },
+    {
+      "name": "Particle Beam",
+      "Description": "Accelerates subatomic particles to near light-speed. Does heavy damage to all types of protection",
+      "range": 300,
+      "healthDMG": 280,
+      "armorDMG": 350,
+      "shieldDMG": 320,
+      "ammo": 20
+    },
+    {
+      "name": "Nanite Swarm",
+      "Description": "Unleash a swarm of microscopic machines with a taste for metal. Does moderate damage to armor ",
+      "range": 500,
+      "healthDMG": 100,
+      "armorDMG": 275,
+      "shieldDMG": 120,
+      "ammo": 1
+    },
+    {
+      "name": "Plasma Mortar",
+      "Description": "Launch a plasma grenade to distances longer than you can throw",
+      "range": 200,
+      "healthDMG": 200,
+      "armorDMG": 250,
+      "shieldDMG": 220,
+      "ammo": 3
+    },
+    {
+      "name": "Machete",
+      "Description": "Used for cutting down martian jungle vines... and people",
+      "range": 3,
+      "healthDMG": 275,
+      "armorDMG": 102,
+      "shieldDMG": 130,
+      "ammo": 999
+    },
+    {
+      "name": "Singularity Cannon",
+      "Description": "Launch a miniaturized black hole to do heavy damage to all types of protection",
+      "range": 500,
+      "healthDMG": 400,
+      "armorDMG": 500,
+      "shieldDMG": 450,
+      "ammo": 1
+    },
+    {
+      "name": "Scattergun",
+      "Description": "A simple weapon that shoots a spread of lead pellets. Super effective against shields and armor, but has short range. Equip wisely",
+      "range": 80,
+      "healthDMG": 110,
+      "armorDMG": 311,
+      "shieldDMG": 450,
+      "ammo": 15
+    },
+    {
+      "name": "Stun Gun",
+      "Description": "Less-Than-Lethal weapon that pulses electricity into your opponents. Very effective against sheields",
+      "range": 100,
+      "healthDMG": 30,
+      "armorDMG": 40,
+      "shieldDMG": 300,
+      "ammo": 100
+    },
+    {
+      "name": "Fusion Gun",
+      "Description": "Immpossibly hot gas launched by a shoulder mounted weapon. Powereed by nuclear fusion. Burn your enemy's armor and health to a crisp",
+      "range": 150,
+      "healthDMG": 60,
+      "armorDMG": 200,
+      "shieldDMG": 180,
+      "ammo": 20
+    },
+    {
+      "name": "50-BFG",
+      "Description": "Heavy anti-materiel rifle that penetrates through armor and shields",
+      "range": 999,
+      "healthDMG": 220,
+      "armorDMG": 604,
+      "shieldDMG": 450,
+      "ammo": 2
     }
   ]
 }
